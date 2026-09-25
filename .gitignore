@@ -1,0 +1,21 @@
+# 工具临时产物（浏览器快照常含会话 token）
+*.yaml
+*.yml
+.playwright-cli/
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+
+# 生成物（可由 scripts/make_images.py 重新产出）
+wechat-single-file.html
+
+# 临时文件
+*.tmp
+*.log
