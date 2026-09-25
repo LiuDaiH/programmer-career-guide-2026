@@ -1,6 +1,10 @@
 # 程序员职业方向与核心技术栈全景指南（2026 版）
 
-此处插入封面图
+<p align="center">
+  <img src="images/cover.png" alt="程序员职业方向与核心技术栈全景指南（2026 版）" width="720">
+</p>
+
+*程序员职业方向与核心技术栈全景指南（2026 版）*
 
 ## 引言
 
@@ -24,7 +28,16 @@
 
 ## 一、前端开发工程师
 
-此处插入前端配图
+<p align="center">
+  <img src="images/screenshots/frontend-vscode-1.png" alt="VS Code —— 前端日常待得最久的地方" width="720">
+</p>
+
+*VS Code —— 前端日常待得最久的地方*
+<p align="center">
+  <img src="images/screenshots/frontend-devtools-2.png" alt="Chrome DevTools 元素面板 —— 前端调试的第一现场" width="720">
+</p>
+
+*Chrome DevTools 元素面板 —— 前端调试的第一现场*
 
 前端早已不是"画页面"的代名词。2026 年的前端聚焦于用户体验、工程化与跨端能力，技术深度和广度都在持续扩展。
 
@@ -79,7 +92,11 @@ Redux 正被更轻量的方案替代，**Zustand** 这类方案在中小型项�
 
 ## 二、后端开发工程师
 
-此处插入后端配图
+<p align="center">
+  <img src="images/screenshots/backend-postman-1.png" alt="Postman —— 后端调接口最常用的工具" width="720">
+</p>
+
+*Postman —— 后端调接口最常用的工具*
 
 后端是互联网的底层基石，招聘量最大，职业生命周期也最长。2026 年的两个显著趋势是 Go 在云原生方向的崛起，以及后端的 AI 化。
 
@@ -142,7 +159,16 @@ Java 生态以 Spring Boot 为核心；Go 生态轻量型有 **Gin**、**Echo**�
 
 ## 三、大数据 / 数据工程师
 
-此处插入大数据配图
+<p align="center">
+  <img src="images/screenshots/bigdata-airflow-1.png" alt="Apache Airflow —— 数据任务的调度中枢" width="720">
+</p>
+
+*Apache Airflow —— 数据任务的调度中枢*
+<p align="center">
+  <img src="images/screenshots/bigdata-spark-1.png" alt="Spark Web UI —— 看任务跑在哪、慢在哪" width="720">
+</p>
+
+*Spark Web UI —— 看任务跑在哪、慢在哪*
 
 2026 年的数据工程师已经从"写脚本的人"，转变为数据平台的构建者和数据价值的挖掘者。行业里已经形成共识：批处理用 Spark，流处理用 Flink。
 
@@ -206,7 +232,11 @@ Java 生态以 Spring Boot 为核心；Go 生态轻量型有 **Gin**、**Echo**�
 
 ## 四、AI / 算法工程师
 
-此处插入算法配图
+<p align="center">
+  <img src="images/screenshots/ai-jupyter-1.png" alt="JupyterLab —— 算法工程师的主要工作台" width="720">
+</p>
+
+*JupyterLab —— 算法工程师的主要工作台*
 
 算法岗门槛最高，硕士几乎是起步价，但也是当前需求增长最快的方向。格局上，PyTorch 在研究中占据绝对主导，TensorFlow 在生产部署上更为成熟。
 
@@ -270,7 +300,16 @@ Java 生态以 Spring Boot 为核心；Go 生态轻量型有 **Gin**、**Echo**�
 
 ## 五、DevOps / 云原生工程师
 
-此处插入 DevOps 配图
+<p align="center">
+  <img src="images/screenshots/devops-argocd-2.png" alt="Argo CD —— 声明式持续部署的控制台" width="720">
+</p>
+
+*Argo CD —— 声明式持续部署的控制台*
+<p align="center">
+  <img src="images/screenshots/devops-prometheus-1.png" alt="Grafana 接入 Prometheus —— 标准监控组合" width="720">
+</p>
+
+*Grafana 接入 Prometheus —— 标准监控组合*
 
 DevOps 已成为所有开发岗位的通用基础设施能力。掌握容器化与云原生工具，是 2026 年的基本要求，而不只是这个岗位的要求。
 
@@ -330,7 +369,11 @@ Kubernetes 不要一上来就啃。先用熟 Docker 再学它，否则容易陷�
 
 ## 技术栈速查表
 
-此处插入速查表配图
+<p align="center">
+  <img src="images/cheatsheet.png" alt="2026 技术栈速查表" width="720">
+</p>
+
+*2026 技术栈速查表*
 
 | 方向 | 核心语言 | 必备框架 / 引擎 | 关键工具 | 数据库 / 存储 |
 | --- | --- | --- | --- | --- |

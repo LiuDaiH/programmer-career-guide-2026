@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/cover.png" alt="程序员职业方向与核心技术栈全景指南（2026 版）" width="720">
+</p>
+
 # 程序员职业方向与核心技术栈全景指南（2026 版）
 
 一份面向「想搞清楚该往哪个方向走」的技术地图。按**五大主流方向**拆解，每个方向回答三个问题：
@@ -10,36 +14,65 @@
 
 ---
 
-## 内容
+## 目录
 
-| 文件 | 说明 |
+| 你想找什么 | 去哪 |
 | --- | --- |
-| [`article.md`](article.md) | **正文**（Markdown） |
-| [`illustration-plan.md`](illustration-plan.md) | 配图方案：每张图的类型、需要的官方 Logo 与来源、版权注意 |
-| [`publishing-guide.md`](publishing-guide.md) | 发布到微信公众号的操作说明 |
-| [`wechat.html`](wechat.html) | 公众号可用的排版版本（全内联样式） |
-| [`images/cover.png`](images/cover.png) | 封面（900×383，公众号首图标准比例） |
-| [`images/cheatsheet.png`](images/cheatsheet.png) | 技术栈速查长图（1080 宽，适合手机阅读与截图收藏） |
-| [`images/screenshots/`](images/screenshots/) | 16 张真实软件界面截图 |
-| [`scripts/make_images.py`](scripts/make_images.py) | 生成封面与速查表的脚本（PIL，可传 JSON 配置） |
+| **正文** | [article.md](article.md) |
+| 配图怎么做的（Logo 来源、版权） | [publishing/illustration-plan.md](publishing/illustration-plan.md) |
+| 发到微信公众号 | [publishing/wechat-guide.md](publishing/wechat-guide.md) · [publishing/wechat.html](publishing/wechat.html) |
+| 封面 / 速查表怎么生成的 | [scripts/make_images.py](scripts/make_images.py) |
+| 全部配图 | [images/](images/) |
 
-## 技术栈速览
+> 如果你是**只想读文章**，直接点 [article.md](article.md) 就行，其余都是制作过程。
 
-| 方向 | 核心语言 | 必备框架 / 引擎 | 关键工具 | 数据库 / 存储 |
-| --- | --- | --- | --- | --- |
-| 前端 | TypeScript | React / Next.js、Vue | Vite、Rspack | — |
-| 后端 | Java / Go / Python | Spring Boot、Gin、FastAPI | Docker、Kafka | PostgreSQL、Redis |
-| 大数据 | SQL / Python / Scala | Spark、Flink | Kafka、Airflow / DolphinScheduler | HDFS、Hive、Iceberg |
-| 算法 | Python | PyTorch、TensorFlow | LangChain、MLflow、vLLM | 向量数据库 |
-| DevOps | Go / Python / Bash | Kubernetes | Docker、Terraform、Argo CD | Prometheus、Grafana |
+## 五个方向速览
 
-## 图片来源
+| 方向 | 主要做什么 | 入行门槛 | 招聘热度 |
+| --- | --- | --- | --- |
+| 前端 | 把产品呈现给用户，并保证它好用 | 中低 | 高 |
+| 后端 | 承载业务逻辑与数据，互联网的底层基石 | 中 | 最高 |
+| 大数据 | 让海量数据能被存下、算清、用起来 | 中高 | 中高 |
+| AI / 算法 | 让机器从数据里学到能力 | 最高 | 高（增长最快） |
+| DevOps / 云原生 | 让代码可靠地跑起来、发出去、看得见 | 中 | 中高 |
 
-`images/screenshots/` 下的界面截图**全部来自各项目官方文档站**，是真实软件界面，非宣传图。
+## 技术栈速查（可直接截图收藏）
+
+<p align="center">
+  <img src="images/cheatsheet.png" alt="2026 技术栈速查表" width="560">
+</p>
+
+## 仓库结构
+
+```
+.
+├── article.md                     正文（从这里开始）
+├── images/
+│   ├── cover.png                  封面（900×383）
+│   ├── cheatsheet.png             技术栈速查长图（1080 宽）
+│   └── screenshots/               16 张软件界面截图，按方向命名
+│       ├── frontend-*.png         前端：VS Code / Chrome DevTools
+│       ├── backend-*.png          后端：Postman
+│       ├── bigdata-*.png          大数据：Airflow / Spark UI
+│       ├── ai-*.png               算法：JupyterLab
+│       └── devops-*.png           DevOps：Argo CD / Grafana
+├── publishing/                    制作与发布（不是文章本身）
+│   ├── illustration-plan.md       配图方案
+│   ├── wechat-guide.md            公众号发布说明
+│   └── wechat.html                公众号排版版本
+└── scripts/
+    └── make_images.py             生成封面与速查表
+```
+
+**命名的用意**：截图前缀就是它所属的方向。想看某方向的界面图，按前缀找即可。
+
+## 图片来源与版权
+
+`images/screenshots/` 下的界面截图**全部来自各项目官方文档站**，是真实软件界面，不是宣传图。
 
 > 图片来自各项目官网，仅用于技术介绍，版权归原作者所有。
 
-**没有图标站的二次绘制版本** —— 技术类文章的配图越素越可信。
+没有使用图标站的二次绘制版本 —— 技术类文章的配图越素越可信。
 
 ## 重新生成配图
 
@@ -47,7 +80,7 @@
 python scripts/make_images.py --config spec.json --out ./images
 ```
 
-不传 `--config` 会用内置示例数据。依赖 Pillow；中文字体用系统的微软雅黑（`msyhbd.ttc`）。
+不传 `--config` 会用内置示例数据。依赖 Pillow；中文字体用系统自带的微软雅黑。
 
 ## 说明
 

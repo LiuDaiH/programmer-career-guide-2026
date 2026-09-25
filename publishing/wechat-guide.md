@@ -5,7 +5,7 @@
 ```
 桌面\
 └─ 文章配图\
-   ├─ 公众号版.html        ← 发公众号用这个
+   ├─ wechat.html        ← 发公众号用这个
    ├─ 公众号版-单文件.html  ← 图片内嵌，传给别人/换电脑看用这个（2.2 MB）
    ├─ 使用说明.md           ← 本文件
    └─ 界面截图\             ← 已抓到的真实界面图（16 张）
@@ -23,7 +23,7 @@
 
 ## 怎么发到公众号
 
-1. **双击 `公众号版.html`**，用浏览器打开（Edge、Chrome 都行）
+1. **双击 `wechat.html`**，用浏览器打开（Edge、Chrome 都行）
 2. 在页面里 **Ctrl + A 全选**，**Ctrl + C 复制**
 3. 打开公众号后台 → 新建图文 → 在**正文区** **Ctrl + V 粘贴**（不要粘到标题栏）
 4. 粘完检查两处：**首行标题**（公众号有自己的标题栏，正文里的 h1 可以删掉）和**图片位置**
@@ -34,7 +34,7 @@
 
 | 用途 | 用哪个 | 说明 |
 | --- | --- | --- |
-| **发公众号** | `公众号版.html` | 粘贴后排版会过去；图片可能需要手动补 |
+| **发公众号** | `wechat.html` | 粘贴后排版会过去；图片可能需要手动补 |
 | **发给别人 / 换电脑看 / 存档** | `公众号版-单文件.html` | 图片已内嵌，**单个文件走哪都能正常显示**（2.2 MB） |
 
 **单文件版不要用来发公众号** —— 内嵌的 base64 图片粘不进微信编辑器，发公众号还是用原版。
@@ -63,14 +63,14 @@
 
 | 位置 | 上传这张 | 图里是什么 |
 | --- | --- | --- |
-| 一、前端 | `前端-VSCode-1.png` | VS Code 主界面 |
-| 一、前端 | `前端-ChromeDevTools-2.png` | Chrome DevTools 元素面板 |
-| 二、后端 | `后端-Postman-1.png` | Postman 发送请求 |
-| 三、大数据 | `大数据-AirflowUI-1.png` | Apache Airflow 任务列表 |
-| 三、大数据 | `大数据-SparkUI-1.png` | Spark Web UI 任务页 |
-| 四、算法 | `算法-Jupyter-1.png` | JupyterLab 界面 |
-| 五、DevOps | `DevOps-ArgoCD-2.png` | Argo CD 应用详情 |
-| 五、DevOps | `DevOps-Prometheus-1.png` | Grafana 接入 Prometheus |
+| 一、前端 | `frontend-vscode-1.png` | VS Code 主界面 |
+| 一、前端 | `frontend-devtools-2.png` | Chrome DevTools 元素面板 |
+| 二、后端 | `backend-postman-1.png` | Postman 发送请求 |
+| 三、大数据 | `bigdata-airflow-1.png` | Apache Airflow 任务列表 |
+| 三、大数据 | `bigdata-spark-1.png` | Spark Web UI 任务页 |
+| 四、算法 | `ai-jupyter-1.png` | JupyterLab 界面 |
+| 五、DevOps | `devops-argocd-2.png` | Argo CD 应用详情 |
+| 五、DevOps | `devops-prometheus-1.png` | Grafana 接入 Prometheus |
 
 **封面**和**速查表长图**需要自己出，正文里已留了占位框。
 
@@ -80,22 +80,22 @@
 
 | 文件 | 内容 | 看起来像 |
 | --- | --- | --- |
-| `前端-VSCode-1.png` | VS Code 主界面 | 编辑器 + 侧边栏 |
-| `前端-VSCode-2.png` | 并排编辑器分组 | 左右分栏 |
-| `前端-ChromeDevTools-1.png` | 设备模式 | 移动端预览 |
-| `前端-ChromeDevTools-2.png` | 元素面板 | DOM 树 + 样式 |
-| `后端-Postman-1.png` | 发送首个请求 | 请求地址 + 响应 |
-| `后端-Postman-2.png` | 保存请求 | 侧栏列表 |
-| `大数据-AirflowUI-1.png` | Airflow 首页（深色） | DAG 列表 |
-| `大数据-AirflowUI-2.png` | Airflow 首页（浅色） | 同上，浅色主题 |
-| `大数据-SparkUI-1.png` | Spark Jobs 总览 | 任务表格 |
-| `大数据-SparkUI-2.png` | Spark 单个 Job 详情 | 阶段依赖图 |
-| `算法-Jupyter-1.png` | JupyterLab | 分栏工作区 |
-| `算法-Jupyter-2.png` | Jupyter Notebook | 经典笔记本 |
-| `DevOps-Prometheus-1.png` | Grafana 配置 Prometheus 数据源 | 配置表单 |
-| `DevOps-Prometheus-2.png` | Grafana QPS 曲线 | 折线图 |
-| `DevOps-ArgoCD-1.png` | Argo CD 新建应用 | 表单（竖版） |
-| `DevOps-ArgoCD-2.png` | Argo CD 应用详情 | 资源树 |
+| `frontend-vscode-1.png` | VS Code 主界面 | 编辑器 + 侧边栏 |
+| `frontend-vscode-2.png` | 并排编辑器分组 | 左右分栏 |
+| `frontend-devtools-1.png` | 设备模式 | 移动端预览 |
+| `frontend-devtools-2.png` | 元素面板 | DOM 树 + 样式 |
+| `backend-postman-1.png` | 发送首个请求 | 请求地址 + 响应 |
+| `backend-postman-2.png` | 保存请求 | 侧栏列表 |
+| `bigdata-airflow-1.png` | Airflow 首页（深色） | DAG 列表 |
+| `bigdata-airflow-2.png` | Airflow 首页（浅色） | 同上，浅色主题 |
+| `bigdata-spark-1.png` | Spark Jobs 总览 | 任务表格 |
+| `bigdata-spark-2.png` | Spark 单个 Job 详情 | 阶段依赖图 |
+| `ai-jupyter-1.png` | JupyterLab | 分栏工作区 |
+| `ai-jupyter-2.png` | Jupyter Notebook | 经典笔记本 |
+| `devops-prometheus-1.png` | Grafana 配置 Prometheus 数据源 | 配置表单 |
+| `devops-prometheus-2.png` | Grafana QPS 曲线 | 折线图 |
+| `devops-argocd-1.png` | Argo CD 新建应用 | 表单（竖版） |
+| `devops-argocd-2.png` | Argo CD 应用详情 | 资源树 |
 
 ## 注意事项
 
