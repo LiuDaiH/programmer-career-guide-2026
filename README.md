@@ -12,19 +12,9 @@
 
 覆盖方向：**前端 · 后端 · 大数据 · AI/算法 · DevOps/云原生**
 
+**正文 → [article.md](article.md)**
+
 ---
-
-## 目录
-
-| 你想找什么 | 去哪 |
-| --- | --- |
-| **正文** | [article.md](article.md) |
-| 配图怎么做的（Logo 来源、版权） | [publishing/illustration-plan.md](publishing/illustration-plan.md) |
-| 发到微信公众号 | [publishing/wechat-guide.md](publishing/wechat-guide.md) · [publishing/wechat.html](publishing/wechat.html) |
-| 封面 / 速查表怎么生成的 | [scripts/make_images.py](scripts/make_images.py) |
-| 全部配图 | [images/](images/) |
-
-> 如果你是**只想读文章**，直接点 [article.md](article.md) 就行，其余都是制作过程。
 
 ## 五个方向速览
 
@@ -36,51 +26,25 @@
 | AI / 算法 | 让机器从数据里学到能力 | 最高 | 高（增长最快） |
 | DevOps / 云原生 | 让代码可靠地跑起来、发出去、看得见 | 中 | 中高 |
 
-## 技术栈速查（可直接截图收藏）
+## 技术栈速查
 
 <p align="center">
   <img src="images/cheatsheet.png" alt="2026 技术栈速查表" width="560">
 </p>
 
-## 仓库结构
+## 文中配图
 
-```
-.
-├── article.md                     正文（从这里开始）
-├── images/
-│   ├── cover.png                  封面（900×383）
-│   ├── cheatsheet.png             技术栈速查长图（1080 宽）
-│   └── screenshots/               16 张软件界面截图，按方向命名
-│       ├── frontend-*.png         前端：VS Code / Chrome DevTools
-│       ├── backend-*.png          后端：Postman
-│       ├── bigdata-*.png          大数据：Airflow / Spark UI
-│       ├── ai-*.png               算法：JupyterLab
-│       └── devops-*.png           DevOps：Argo CD / Grafana
-├── publishing/                    制作与发布（不是文章本身）
-│   ├── illustration-plan.md       配图方案
-│   ├── wechat-guide.md            公众号发布说明
-│   └── wechat.html                公众号排版版本
-└── scripts/
-    └── make_images.py             生成封面与速查表
-```
+`images/screenshots/` 下 16 张截图，**前缀即所属方向**：
 
-**命名的用意**：截图前缀就是它所属的方向。想看某方向的界面图，按前缀找即可。
-
-## 图片来源与版权
-
-`images/screenshots/` 下的界面截图**全部来自各项目官方文档站**，是真实软件界面，不是宣传图。
+| 前缀 | 方向 | 内容 |
+| --- | --- | --- |
+| `frontend-` | 前端 | VS Code、Chrome DevTools |
+| `backend-` | 后端 | Postman |
+| `bigdata-` | 大数据 | Apache Airflow、Spark Web UI |
+| `ai-` | 算法 | JupyterLab |
+| `devops-` | DevOps | Argo CD、Grafana 接入 Prometheus |
 
 > 图片来自各项目官网，仅用于技术介绍，版权归原作者所有。
-
-没有使用图标站的二次绘制版本 —— 技术类文章的配图越素越可信。
-
-## 重新生成配图
-
-```bash
-python scripts/make_images.py --config spec.json --out ./images
-```
-
-不传 `--config` 会用内置示例数据。依赖 Pillow；中文字体用系统自带的微软雅黑。
 
 ## 说明
 
